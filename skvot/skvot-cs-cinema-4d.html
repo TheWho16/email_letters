@@ -1,0 +1,899 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+
+        .block {
+            border: 30px solid transparent;
+            border-left: 43px solid #fff;
+            display: block;
+            width: 0;
+            mso-line-height-rule: exactly;
+            height: 0;
+        }
+
+        .wrap-table {
+            width: 950px;
+        }
+
+        .wrap-table-email {
+            width: 586px;
+            height: auto;
+            mso-line-height-rule: exactly;
+        }
+
+        a {
+            color: #000;
+        }
+
+        .td-wrap-table-email {
+            padding-bottom: 0;
+            mso-line-height-rule: exactly;
+        }
+
+        .header-td-first {
+            padding: 54px 0px 9px 18px !important;
+        }
+
+        .size-16 {
+            font-size: 16px !important;
+        }
+
+        .header-td-second {
+            padding: 35px 0px 0px 18px !important;
+        }
+
+        .header-td {
+            padding-right: 2rem !important;
+            padding-bottom: 1.25rem !important;
+        }
+
+        .content-header-td {
+            padding: 30px 0px 30px 18px !important;
+        }
+
+        .second-td-block-bold {
+            padding: 28px 0 46px 35px !important;
+        }
+
+        .header-img-td {
+            padding-top: 2rem !important;
+            padding-left: 1.5rem !important;
+        }
+
+        .header {
+            font-family: 'Rubik', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff;
+            mso-line-height-rule: exactly;
+        }
+
+        .footer_table {
+            height: 112px;
+        }
+
+        .header_before {
+            position: relative;
+            z-index: 5;
+        }
+
+        .header_before::before {
+            content: "";
+            background-image: url('https://skvot.io/ckeditor/email_image/greetings.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            width: 100%;
+            height: 13rem;
+            z-index: -1;
+            right: 5rem;
+            bottom: -4rem;
+        }
+
+        .text-bold {
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            z-index: 3;
+            position: relative;
+            mso-line-height-rule: exactly;
+        }
+
+        .text-medium {
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px !important;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            mso-line-height-rule: exactly;
+        }
+
+        .td-second-block-content {
+            padding: 0 0 38px 0 !important;
+        }
+
+        .red_a {
+            font-weight: bold;
+            color: #ef5533;
+        }
+
+        .black_a {
+            font-weight: bold;
+            color: #0a0a0a;
+        }
+
+        .table-text-ul {
+            width: 500px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            left: 1.1rem;
+        }
+
+        .br-hide {
+            display: none;
+        }
+
+        .footer-a {
+            position: relative;
+            z-index: 5;
+        }
+
+        .footer-a::before {
+            content: '';
+            background-image: url('https://skvot.io/ckeditor/email_image/skvot-20210127-114418.png');
+            position: absolute;
+            width: 6.063em;
+            height: 5.375em;
+            background-size: contain;
+            top: -3rem;
+            left: 0;
+            z-index: -1;
+        }
+
+        .second-td-block-medium {
+            padding: 0 !important;
+            padding-top: 32px !important;
+        }
+
+        .second-td-block-medium p {
+            margin: 0 !important;
+        }
+
+        .table_padding {
+            padding: 50px 24px 45px !important;
+        }
+
+        .mb-3 {
+            margin-bottom: 30px;
+        }
+
+        .content-tr td {
+            padding: 0px 0px 20px 50px !important;
+        }
+
+        .footer_p {
+            min-width: 270px;
+        }
+
+        .triangle-li {
+            list-style-type: none;
+            margin-bottom: 40px;
+            position: relative;
+            font-family: 'Rubik', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            z-index: 3;
+            position: relative;
+            mso-line-height-rule: exactly;
+        }
+
+        .second-td-content {
+            padding-top: 2em;
+        }
+
+        .red_text {
+            color: #ef5533;
+        }
+
+        @media screen and (max-device-width: 768px) {
+            .wrap-table {
+                width: 570px;
+                height: auto;
+            }
+
+            .wrap-table-email {
+                width: 488px;
+            }
+
+            .wrap-table-email-second {
+                padding: 26px 24px 0 !important;
+            }
+
+            .header-td-first {
+                padding: 34px 0px 0px 18px !important;
+            }
+
+            .header-td-second {
+                padding: 18px 0px 0px 18px !important;
+            }
+
+            .header-td-third {
+                padding: 0 0 45px 0px !important;
+            }
+
+            .afrer-laba::after {
+                font-size: 50px !important;
+                right: -4px;
+                bottom: 20px;
+            }
+
+            .footer_p {
+                min-width: 155px !important;
+            }
+
+            .header {
+                font-size: 18px !important;
+            }
+
+            .triangle-li {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+
+            .star-after::after {
+                display: none;
+            }
+
+            .text-bold {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+                width: 380px;
+            }
+
+            .text-medium {
+                font-size: 16px !important;
+                line-height: 1.57 !important;
+            }
+
+            .first-table {
+                padding: 0 16px 36px 82px !important;
+            }
+
+            .header_before::before {
+                bottom: -4rem !important;
+            }
+
+            .br-hide {
+                display: block;
+            }
+
+            .triangle-li {
+                margin-bottom: 25px;
+            }
+
+            .content-header-tr td {
+                padding: 30px 0px 30px 18px !important;
+
+            }
+
+            .triangle-li::before {
+                right: 27rem;
+            }
+
+            .triangle-li:last-child {
+                margin-bottom: 0;
+            }
+
+            .content-tr td {
+                padding: 0px 0 20px 45px !important;
+            }
+
+            .tr-content-footer td {
+                padding: 0 0 38px !important;
+            }
+
+            .soon-tr td {
+                padding-top: 0 !important;
+            }
+
+            .footer_table {
+                height: 100px;
+            }
+
+            .header_before::before {
+                right: 5rem;
+                bottom: -3rem;
+                width: 96%;
+                height: 10rem;
+            }
+
+            .tablet-padding {
+                padding-bottom: 32px !important;
+            }
+
+            .header-img-td {
+                padding-bottom: 0.813rem !important;
+            }
+
+            .header-img {
+                width: 62%;
+            }
+
+            .table_padding {
+                padding: 42px 24px 45px !important;
+            }
+
+            .second-td-block-medium {
+                padding-right: 1rem !important;
+            }
+
+        }
+
+        @media screen and (max-device-width: 414px) {
+            .wrap-table {
+                width: 360px;
+                height: auto;
+            }
+
+            .wrap-table-email {
+                width: 322px;
+            }
+
+            .footer-a {
+                font-size: 11px !important;
+            }
+
+            .wrap-table-email-second {
+                padding: 26px 19px 0;
+            }
+
+            .footer-a::before {
+                width: 72px;
+                height: 64px;
+                top: -2.3rem;
+            }
+
+            .text-bold,
+            .triangle-li,
+            .triangle-li a {
+                font-size: 12px !important;
+                line-height: 1.67 !important;
+                width: auto;
+            }
+
+            .header-td-third {
+                padding: 0 0 30px 0px !important;
+            }
+
+            .triangle-li::before {
+                right: 17.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            .td-second-block-content {
+                padding: 0 0 20px 0 !important;
+            }
+
+            .text-medium,
+            .text-medium a {
+                font-size: 11px !important;
+                line-height: 1.67 !important;
+            }
+
+            .mob-hide {
+                display: none;
+            }
+
+            .content-tr td {
+                padding: 0 15px 30px 30px !important;
+            }
+
+            .first-table {
+                padding: 33px 30px 26px !important;
+            }
+
+            .afrer-laba::after {
+                font-size: 33px !important;
+                right: -4px;
+                bottom: -6px;
+            }
+
+            .laba_svg {
+                height: 10px;
+                width: 60px;
+            }
+
+            .footer_a {
+                font-size: 10px !important;
+            }
+
+            .footer_table {
+                height: 80px;
+                padding: 0 15px 0 !important;
+            }
+
+            .header-td-first {
+                padding: 0 0 0px 30px !important;
+            }
+
+            .header-td-second {
+                padding: 10px 0px 0px 30px !important;
+            }
+
+            .content-header-tr td {
+                padding: 24px 0px 24px 30px !important;
+            }
+
+            .header_before::before {
+                right: 4.5rem;
+                bottom: -2rem;
+                width: 90%;
+                height: 8rem;
+            }
+
+            .wrap-table-email-second {
+                padding: 26px 13px 0 !important;
+            }
+
+            .footer_p {
+                min-width: 155px !important;
+            }
+
+            .mb-3 {
+                margin-bottom: 24px !important;
+            }
+
+            .mb-3:last-child {
+                margin: 0 !important;
+            }
+
+            .second-td-block-bold {
+                padding: 0px 0 25px 10px !important;
+            }
+
+            .second-td-block-medium {
+                padding: 20px 30px 0px 0px !important;
+            }
+
+            .table_padding {
+                padding: 27px 24px 27px !important;
+            }
+
+            .header-img {
+                width: 80%;
+            }
+
+            .header {
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #ffffff;margin: 0 auto;font-family: Roboto, Arial, Helvetica;">
+    <table class="wrap-table" align="center" style="background-color:#f3f3f3" border="0" cellpadding="0" cellspacing="0"
+        width="950px">
+        <tr>
+            <td class="td-wrap-table-email">
+                <table class="wrap-table-email" style="background-color:#000;" width="586px" height="112px"
+                    cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td class="header-img-td" style="padding:0;margin:0;" valign="top" align="left">
+                                <img class="header-img" src="../assets/helo.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="header-td" style="padding:0;margin:0;" valign="top" align="right">
+                                <span class="header">Катерина Реутова.</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-wrap-table-email">
+                <table class="wrap-table-email table_padding" style="background-color:#fff;" width="586px"
+                    height="112px" cellspacing="4" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td width="100%"
+                                style="padding-right: 1rem;margin:0;font-family:'Rubik', sans-serif;color:rgb(255, 255, 255);"
+                                valign="top" align="left" colspan="2">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    Мы общались с вами по поводу онлайн-курса «Cinema 4D».
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>Лектор:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    Даша Кузнецова — работает в московской дизайн-студии White Russian, преподаёт С4D в
+                                    Британке, делала проекты для Яндекс.Такси и Афиши, переводит тех.материалы для
+                                    создателей C4D — Maxon.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>Старт:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    14 декабря в 19:00 по Киеву / 20:00 по Мск.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>График:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    12 онлайн-вебинаров по вторникам и четвергам + 2 занятия в записи по динамике в
+                                    soft-body для лучших студентов
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>План
+                                        курса:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    лекции (1-1,5 часа) + домашние задания после каждого урока + курсовой проект по
+                                    анимации городского квартала.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>Дедлайны:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    1 неделя.
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-content" width="20%" style="margin:0;font-family:Arial, sans-serif;"
+                                valign="top" align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    <strong>На финише:</strong>
+                                </span>
+
+                            </td>
+                            <td class="second-td-content" width="80%"
+                                style="padding-left: 1em;margin:0;font-family:Arial, sans-serif;" valign="top"
+                                align="left">
+                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-stretch: normal;
+                            font-style: normal;
+                            line-height: normal;
+                            letter-spacing: normal;
+                            text-align: left;
+                            color: #2a2a2a;">
+                                    диплом (если набрали достаточно баллов) или сертификат (если набрали меньше).
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-wrap-table-email">
+                <table class="wrap-table-email table_padding" style="background-color:#DFDFDF; padding: 26px 29px 45px"
+                    width="586px" height="112px" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td style="margin:0;font-family:'Rubik', Arial, sans-serif;color:rgb(178, 178, 178);"
+                                valign="top" align="left" colspan="4">
+                                <p class="text-medium red_text">
+                                    Стоимость 250$.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-block-medium"
+                                style="margin:0;font-family:'Rubik', Arial, sans-serif;color:rgb(178, 178, 178);"
+                                valign="top" align="left" colspan="4">
+                                <p class="text-medium">
+                                    <strong>Более подробная информация:</strong>
+                                </p>
+                                <p class="text-medium">
+                                    <a href="https://skvot.io/ru/course/cinema-4d">
+                                        https://skvot.io/ru/course/cinema-4d
+                                    </a>
+                                </p>
+                                <p class="text-medium">
+                                    <a href="#">Детальная презентация курса</a>
+                                </p>
+                                <p class="text-medium">
+                                    <a href="#">Демо-видео курса</a>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-block-medium"
+                                style="margin:0;font-family:'Rubik', Arial, sans-serif;color:rgb(178, 178, 178);"
+                                valign="top" align="left" colspan="4">
+                                <p class="text-medium">
+                                    <strong>Ваши результаты после курса:</strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-td-block-medium"
+                                style="margin:0;font-family:'Rubik', Arial, sans-serif;color:rgb(178, 178, 178);"
+                                valign="top" align="left" colspan="4">
+                                <ul style="
+                                font-family: 'Rubik',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.4;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;
+                                position: relative;
+                                z-index: 3;
+                                ">
+                                    <li class="li_dot text-medium" style="font-family: Helvetica;">
+                                        разберетесь в интерфейсе и особенностях работы в C4D;
+                                    </li>
+                                    <li class="li_dot text-medium" style="font-family: Helvetica;">
+                                        сможете создавать 3D иллюстрацию и анимацию;
+                                    </li>
+                                    <li class="li_dot text-medium" style="font-family: Helvetica;">
+                                        добавите в своё портфолио 7 работ;
+                                    </li>
+                                    <li class="li_dot text-medium" style="font-family: Helvetica;">
+                                        создадите анимацию целого городского квартала.
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-wrap-table-email" style="padding-bottom: 50px;">
+                <table class="wrap-table-email" style="background-color:#000;" width="586px" height="112px"
+                    cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td style="padding:0;margin:0;" valign="top" align="left">
+                                <table data-editable="text" class="footer_table" style="padding: 15px 15px 0;"
+                                    width="100%" height="112px cellspacing=" 0" cellpadding="0" border="0"
+                                    align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding:0;margin:0;" valign="center" align="center">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                                    align="left">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="70%" valign="top" align="left"
+                                                                style="margin:0;font-family:'Rubik', sans-serif;color:rgb(255, 255, 255);">
+                                                                <span class="text-medium" style="font-family:'Rubik',sans-serif;
+                                                                font-size: 16px;
+                                                                font-weight: 500;
+                                                                font-stretch: normal;
+                                                                font-style: normal;
+                                                                line-height: 1.5;
+                                                                letter-spacing: normal;
+                                                                text-align: left;
+                                                                color: #fff;">
+                                                                    Добреля Ольга,
+                                                                    <br />
+                                                                    Client
+                                                                    Service
+                                                                </span>
+                                                            </td>
+                                                            <td width="30%"
+                                                                style="margin:0;font-family:'Rubik', sans-serif;color:rgb(178, 178, 178);"
+                                                                valign="bottom" align="center">
+                                                                <a class="footer-a" style="
+                                                                                            font-size: 16px;
+                                                                                            font-weight: bold;
+                                                                                            font-stretch: normal;
+                                                                                            font-style: normal;
+                                                                                            line-height: 1.5;
+                                                                                            letter-spacing: normal;
+                                                                                            text-align: left;
+                                                                                            color: #fff;
+                                                                                        " href="https://skvot.io/">
+                                                                    skvot.io
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</body>

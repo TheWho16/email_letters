@@ -1,0 +1,621 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto, Arial, Helvetica&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            src: url('//db.onlinewebfonts.com/c/059288033e0f23aa4c5b19f0965ccc0d?family=Gotham+Pro+Medium');
+        }
+
+        .block {
+            border: 30px solid transparent;
+            border-left: 43px solid #fff;
+            display: block;
+            width: 0;
+            mso-line-height-rule: exactly;
+            height: 0;
+        }
+
+        .wrap-table {
+            width: 950px;
+        }
+
+        .wrap-table-email {
+            width: 586px;
+            height: auto;
+            mso-line-height-rule: exactly;
+        }
+
+        .td-wrap-table-email {
+            padding-bottom: 12px;
+            mso-line-height-rule: exactly;
+        }
+
+        .header {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            mso-line-height-rule: exactly;
+        }
+
+        .text-bold {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            z-index: 3;
+            position: relative;
+            mso-line-height-rule: exactly;
+        }
+
+        .text-medium {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.4;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            mso-line-height-rule: exactly;
+        }
+
+        .laba-white {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            position: relative;
+            right: 81px;
+            z-index: 0;
+            bottom: 25px;
+            mso-line-height-rule: exactly;
+        }
+
+        .laba_svg {
+            width: 112px;
+            height: 20px;
+            mso-line-height-rule: exactly;
+        }
+
+        .red_a {
+            font-weight: bold;
+            color: #fb6233;
+        }
+
+        .black_a {
+            font-weight: bold;
+            color: #0a0a0a;
+        }
+
+        .table-text-ul {
+            width: 500px;
+        }
+
+        .afrer-laba {
+            position: relative;
+            z-index: 3;
+            width: 430px;
+        }
+
+        .afrer-laba::after {
+            content: "Laba";
+            font-family: 'Montserrat', sans-serif;
+            font-size: 70px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #ffffff;
+            position: absolute;
+            z-index: -1;
+            right: -124px;
+            bottom: 0px;
+        }
+
+        .triangle-li {
+            list-style-type: none;
+            margin-bottom: 24px;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 24px;
+            letter-spacing: normal;
+            text-align: left;
+            color: #2a2a2a;
+            z-index: 3;
+            position: relative;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .triangle-li::before {
+            border: 20px solid transparent;
+            content: '';
+            border-left: 34px solid #fff;
+            display: block;
+            position: absolute;
+            width: 0;
+            mso-line-height-rule: exactly;
+            height: 0;
+            z-index: -1;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 92%;
+        }
+
+        .star-after {
+            position: relative;
+            z-index: 5;
+        }
+
+        .star-after::after {
+            content: '';
+            background-image: url('https://l-a-b-a.com/uploads/email_image/st-20210302-105332.png');
+            position: absolute;
+            width: 40px;
+            height: 41px;
+            background-size: contain;
+            top: -15px;
+            left: 447px;
+            z-index: -1;
+        }
+
+        .br-show {
+            display: none;
+        }
+
+        @media screen and (max-device-width: 768px) {
+            .wrap-table {
+                width: 570px;
+                height: auto;
+            }
+
+            .wrap-table-email {
+                width: 488px;
+            }
+
+            .header-td-first {
+                padding: 0 !important;
+            }
+
+            .header-td-second {
+                padding: 29px 0 22px 0px !important;
+            }
+
+            .header-td-third {
+                padding: 0 0 45px 0px !important;
+            }
+
+            .afrer-laba::after {
+                font-size: 50px !important;
+                right: -4px;
+                bottom: 20px;
+            }
+
+            .header {
+                font-size: 18px !important;
+            }
+
+            .triangle-li {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+            }
+
+            .star-after::after {
+                display: none;
+            }
+
+            .text-bold {
+                font-size: 16px !important;
+                line-height: 1.5 !important;
+                width: 380px;
+            }
+
+            .text-medium {
+                font-size: 14px !important;
+                line-height: 1.57 !important;
+            }
+
+            .br-hide {
+                display: none;
+            }
+
+            .br-show {
+                display: block;
+            }
+
+            .triangle-li {
+                margin-bottom: 25px;
+            }
+
+            .content-header-tr td {
+                padding: 0px 0 29px 0px !important;
+            }
+
+            .triangle-li::before {
+                border: 30px solid transparent !important;
+                border-left: 30px solid #fff !important;
+            }
+
+            .triangle-li:last-child {
+                margin-bottom: 0;
+            }
+
+            .content-tr td {
+                padding: 0 0 30px 24px !important;
+            }
+
+            .tr-content-footer td {
+                padding: 0 0 38px !important;
+            }
+
+            .soon-tr td {
+                padding-top: 0 !important;
+            }
+
+        }
+
+        @media screen and (max-device-width: 414px) {
+            .wrap-table {
+                width: 360px;
+                height: auto;
+            }
+
+            .wrap-table-email {
+                width: 322px;
+            }
+
+            .text-bold,
+            .header,
+            .triangle-li,
+            .triangle-li a {
+                font-size: 12px !important;
+                line-height: 1.67 !important;
+                width: auto;
+            }
+
+            .header-td-third {
+                padding: 0 0 30px 0px !important;
+            }
+
+            .triangle-li::before {
+                border: 20px solid transparent !important;
+                border-left: 20px solid #fff !important;
+                right: 88%;
+            }
+
+            .text-medium,
+            .text-medium a {
+                font-size: 11px !important;
+                line-height: 1.67 !important;
+            }
+
+            .mob-hide {
+                display: none;
+            }
+
+            .content-tr td {
+                padding: 0 0 30px 12px !important;
+            }
+
+            .first-table {
+                padding: 48px 29px 0 !important;
+            }
+
+            .afrer-laba::after {
+                font-size: 33px !important;
+                right: -4px;
+                bottom: -6px;
+            }
+
+            .laba_svg {
+                height: 10px;
+                width: 60px;
+            }
+
+            .footer_a {
+                font-size: 10px !important;
+            }
+
+        }
+    </style>
+</head>
+
+<body style="background-color: #ffffff;margin: 0 auto;font-family: Roboto, Arial, Helvetica;">
+    <table class="wrap-table" align="center" style="background-color:#ededed" border="0" cellpadding="0" cellspacing="0"
+        width="950px">
+        <tr>
+            <td class="td-wrap-table-email">
+                <table class="wrap-table-email" style="background-color:#fbee7d;" width="586px" height="112px"
+                    cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td style="padding:0;margin:0;" valign="top" align="left">
+                                <table class="first-table" data-editable="text" style="padding: 58px 29px 0;"
+                                    width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr class="header-tr">
+                                            <td class="header-td-first"
+                                                style="padding:0px 0 35px 0px;margin:0;font-family:Arial, sans-serif;color:rgb(255, 255, 255);"
+                                                valign="top" align="left">
+                                                <span class="header" style="font-family:'Montserrat',sans-serif;
+                                                ">
+                                                    Здравствуйте.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="header-tr">
+                                            <td class="header-td-second"
+                                                style="padding:0;margin:0;width: 430px;font-family:'Montserrat', sans-serif;"
+                                                valign="top" align="left">
+                                                <p class="text-bold afrer-laba"> Я — ИМЯ, ваш
+                                                    персональный
+                                                    менеджер
+                                                    во время
+                                                    обучения в
+                                                    Laba.</p>
+
+                                            </td>
+                                        </tr>
+                                        <tr class="header-tr">
+                                            <td class="header-td-third" style="padding:35px 0 45px 0px;" valign="top"
+                                                align="left" colspan="4">
+                                                <span class="text-bold" style="font-family:'Montserrat',sans-serif;
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                    font-stretch: normal;
+                                                    font-style: normal;
+                                                    line-height: normal;
+                                                    letter-spacing: normal;
+                                                    text-align: left;
+                                                    color: #2a2a2a;">
+                                                    <strong style="border-bottom: 2px solid #fff">Сегодня</strong>
+                                                    начинается обучение на курсе <br />
+                                                    «НАЗВАНИЕ».
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr class="header-tr">
+                                            <td class="header-td-third" style="padding:0 0 49px 0px;" valign="top"
+                                                align="left" colspan="4">
+                                                <span class="text-bold" style="font-family:'Montserrat',sans-serif;
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                    font-stretch: normal;
+                                                    font-style: normal;
+                                                    line-height: normal;
+                                                    letter-spacing: normal;
+                                                    text-align: left;
+                                                    color: #2a2a2a;">
+                                                    Зарегистрируйтесь в личном кабинете. В течение пары часов мы
+                                                    вышлем приглашение для регистрации в личном кабинете от
+                                                    <strong>«Платформа Laba»</strong> на вашу почту. В письме с
+                                                    темой
+                                                    <strong>«Начало вашего обучения...» </strong>необходимо перейти
+                                                    по ссылке, логин уже будет
+                                                    введен <strong>(это ваша почта),</strong> пароль нужно придумать
+                                                    самостоятельно.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-wrap-table-email">
+                <table class="wrap-table-email" style="background-color:#cae8a7; padding: 40px 29px 0;" width="586px"
+                    height="112px" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr class="content-header-tr">
+                            <td style="padding:0px 0 40px 0px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
+                                valign="top" align="left" colspan="4">
+                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
+                                font-size: 16px;
+                                font-weight: bold;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: normal;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;">
+                                    Если у вас возникнут трудности с подключением,
+                                </span>
+                            </td>
+                        </tr>
+                        <tr class="content-tr">
+                            <td style="padding:10px 0 0 24px;margin:0;font-family:Arial, sans-serif;color:rgb(178, 178, 178);"
+                                valign="top" align="left" colspan="4">
+
+                                <ul style="
+                                font-family: 'Montserrat',sans-serif;
+                                font-size: 20px;
+                                font-weight: 500;
+                                font-stretch: normal;
+                                font-style: normal;
+                                line-height: 1.4;
+                                letter-spacing: normal;
+                                text-align: left;
+                                color: #2a2a2a;
+                                position: relative;
+                                z-index: 3;
+                                ">
+                                    <li class="triangle-li">
+                                        звоните по
+                                        следующим
+                                        номерам
+                                        <strong>+380931770262,</strong>
+                                        <strong>+79585826111
+                                        </strong>
+                                    </li>
+                                    <li class="triangle-li">
+                                        пишите на почту
+                                        <a style="
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        font-stretch: normal;
+                                        font-style: normal;
+                                        line-height: 1.5;
+                                        letter-spacing: normal;
+                                        text-align: left;
+                                        color: #2a2a2a;
+                                    " href="mailto:support@l-a-b-a.com">
+                                            support@l-a-b-a.com
+                                        </a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td-wrap-table-email" style="padding-bottom: 50px;">
+                <table class="wrap-table-email" style="background-color:#e1c2f9;" width="586px" height="112px"
+                    cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr>
+                            <td style="padding:0;margin:0;" valign="top" align="left">
+                                <table data-editable="text" style="padding: 15px 8px 0;" width="100%" cellspacing="0"
+                                    cellpadding="0" border="0" align="center">
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding:0px 0 5px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(255, 255, 255);"
+                                                valign="top" align="left">
+                                                <span class="text-medium" style="font-family:'Montserrat',sans-serif;
+                                                font-size: 16px;
+                                                font-weight: 500;
+                                                font-stretch: normal;
+                                                font-style: normal;
+                                                line-height: 1.5;
+                                                letter-spacing: normal;
+                                                text-align: left;
+                                                color: #2a2a2a;">
+                                                    Добреля Ольга, Client Service
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="
+                                        width: 526px;
+                                        height: 1px;
+                                        background-color: #ffffff;
+                                        ">
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:0;margin:0;" valign="top" align="center">
+                                                <table width="100%" cellspacing="0" cellpadding="0" border="0"
+                                                    align="left">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="34%" valign="top" align="center">
+                                                                <table width="100%" cellspacing="0" cellpadding="0"
+                                                                    border="0" align="left">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="margin:0;padding:0;" valign="top"
+                                                                                align="left">
+                                                                                <table data-editable="text" width="100%"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    border="0" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="padding:10px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(178, 178, 178);"
+                                                                                                valign="top"
+                                                                                                align="left">
+                                                                                                <svg class="laba_svg"
+                                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                                    viewBox="0 0 454 75"
+                                                                                                    id="labaFullLogo">
+                                                                                                    <path
+                                                                                                        d="M107.281 60.66c-8.508 0-14.175-1.308-14.175-4.531 0-3.227 4.113-4.707 13.078-4.707h26.16c-5.856 5.574-15 9.238-25.063 9.238zm3.539-43.523c-19.636 0-31.3 8.332-31.3 8.332v14.57s10.968-8.137 31.027-8.137c15.574 0 21.422 3.59 21.422 7.051-18.285 0-11.621-.047-19.02-.047-24.601 0-36.242 5.516-36.242 17.317 0 11.8 9.899 18.722 26.82 18.722 16.926 0 27.93-8.02 27.93-8.02v6.708h15.77V42.227c0-19.754-15.579-25.09-36.407-25.09zM271.922 60.66c-8.504 0-14.176-1.308-14.176-4.531 0-3.227 4.113-4.707 13.078-4.707h26.16c-5.851 5.574-15 9.238-25.062 9.238zm3.543-43.523c-19.641 0-31.305 8.332-31.305 8.332v14.57s10.973-8.137 31.031-8.137c15.575 0 21.418 3.59 21.418 7.051-18.285 0-11.621-.047-19.015-.047-24.606 0-36.246 5.516-36.246 17.317 0 11.8 9.898 18.722 26.824 18.722 16.922 0 27.93-8.02 27.93-8.02v6.708h15.765V42.227c0-19.754-15.578-25.09-36.402-25.09zM17.031.281H.688v73.352h69.687V58.69H17.031m178.539 1.708c-12.312 0-22.297-6.46-22.297-14.437 0-7.973 9.985-14.434 22.297-14.434 12.317 0 22.297 6.461 22.297 14.434 0 7.977-9.98 14.437-22.297 14.437zm1.442-43.472c-8.375 0-16.102 2.187-22.301 5.87V.282h-15.797v73.352h15.797V69.13c6.199 3.682 13.926 5.87 22.301 5.87C217.867 75 234 62 234 45.96c0-16.034-16.562-29.034-36.988-29.034zm166.968 1.062l-10.824 24.88h-3.906l4.172-9.095-7.293-15.785h4.398l4.774 11.387 4.621-11.387m9.582 0h3.348l3.757 9.242h.075l3.796-9.242h3.344l4.774 17.364h-3.723l-3.008-11.914h-.074l-3.832 9.168h-2.594l-3.832-9.169h-.074l-3.008 11.915h-3.723m43.633-17.364v17.364h-3.683v-7.293h-8.828v7.293h-3.684V17.988h3.684v6.614h8.828v-6.614m28 17.364h-3.684V17.988h3.684v17.364zm-9.282-5.528c0-1.578-.976-2.328-2.707-2.328h-4.132v4.586h4.132c1.731 0 2.707-.789 2.707-2.258zm3.911-.074c0 3.121-2.332 5.602-6.278 5.602h-8.156V17.988h3.684v6.239h4.507c3.911 0 6.243 2.18 6.243 5.523zm16.91-.637l-4.399 6.239h-4.699L442 26.219l-5.898-8.23h4.734l3.383 5.41 3.383-5.41h4.734l-5.898 8.23 6.874 9.133h-4.699m-85.047 38.5h-3.683V59.949h-7.137v9.13c0 3.382-1.883 5.038-4.625 5.038h-1.805V70.77h1.204c1.203 0 1.542-.636 1.542-1.726V56.488h14.504m25.707 8.684c0-3.418-2.293-5.637-5.601-5.637-3.305 0-5.598 2.219-5.598 5.637 0 3.422 2.293 5.637 5.598 5.637 3.308 0 5.601-2.215 5.601-5.637zm3.911 0c0 5.336-4.063 9.246-9.512 9.246-4.918 0-8.68-3.156-9.395-7.703h-2.515v7.14h-3.684V56.489h3.684v7.106h2.515c.715-4.508 4.512-7.668 9.395-7.668 5.449 0 9.512 3.91 9.512 9.246zm17.586 0c0-3.531-2.516-5.637-5.598-5.637s-5.602 2.106-5.602 5.637c0 3.531 2.52 5.637 5.602 5.637 3.082 0 5.598-2.106 5.598-5.637zm-15.332-2.18c0-3.906.828-9.094 4.585-11.5 1.954-1.238 5.188-1.84 7.442-2.48.976-.266 1.953-.715 1.988-1.617h3.649c0 2.859-1.129 3.91-3.457 4.585-2.145.637-5.641 1.13-7.555 2.18-2.18 1.203-3.043 3.61-3.344 6.5h.109c1.278-2.93 3.946-4.508 7.368-4.508 5.113 0 8.457 3.57 8.457 8.832 0 5.524-3.645 9.434-9.547 9.434-5.336 0-9.695-3.156-9.695-11.426zm32.957 1.278v-4.4h-4.735c-1.765 0-2.742.754-2.742 2.18 0 1.468.977 2.218 2.742 2.218h4.735zm3.683-7.782v17.364h-3.683v-6.274h-2.629l-4.961 6.274h-4.434l5.188-6.426c-2.86-.528-4.551-2.555-4.551-5.297 0-3.234 2.332-5.64 6.238-5.64m27.024 3.382h-6.051v13.98h-3.684v-13.98h-6.015v-3.383h15.75">
+                                                                                                    </path>
+                                                                                                </svg>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td style="margin:0;padding:0;" valign="top"
+                                                                                align="left">
+                                                                                <table data-editable="text" width="100%"
+                                                                                    cellspacing="0" cellpadding="0"
+                                                                                    border="0" align="center">
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td style="padding:10px 15px;margin:0;font-family:'Montserrat', sans-serif;color:rgb(178, 178, 178);"
+                                                                                                valign="top"
+                                                                                                align="right">
+                                                                                                <a class="footer-a" style="
+                                                                                            font-size: 16px;
+                                                                                            font-weight: bold;
+                                                                                            font-stretch: normal;
+                                                                                            font-style: normal;
+                                                                                            line-height: 1.5;
+                                                                                            letter-spacing: normal;
+                                                                                            text-align: left;
+                                                                                            color: #2a2a2a;
+                                                                                        " href="https://l-a-b-a.com/">
+                                                                                                    l-a-b-a.com
+                                                                                                </a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
